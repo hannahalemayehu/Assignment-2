@@ -1,0 +1,214 @@
+@media only screen and (min-width:769px) {
+    .gridContainer {
+        width: 89.0217% ;
+        max-width: 1232px ;
+        padding-left: 0.4891% ;
+        margin: auto;
+    }
+#LayoutDiv1 {
+ clear: both;
+ float: left;
+ margin-left: 0;
+ width: 100%;
+ display: block;   
+}
+/*Source: week 9 class presentation; slide 16*/
+
+body {
+    padding: 0.5cm ;
+}
+
+:root {
+    font-size: 75.5%;
+    font-family: montserrat, sans-serif;
+}
+
+h1{
+    font-size: 3.5rem;
+    font-weight: 400;
+    text-align: center;
+    font-family: 'Oswald', sans-serif;
+    color: #080808;
+}
+
+h2 {
+    font-family: 'Quicksand', sans-serif;
+    font-size: 2.0rem;
+    line-height: 1.0em;
+    text-decoration: underline;
+}
+h3 {
+    font-size: 1.5rem;
+    font-family: 'Quicksand', sans-serif;
+    line-height: 1.5em;
+}
+p {
+    font-size: 1.3em;
+}
+
+hr{
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    border: 0;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.container{
+    position: relative;
+    text-align: center;
+    color: white;
+}
+
+.gallery-item{
+    max-width: 100%;
+    border-radius: 5px;
+    transition: all .3s;
+    overflow: hidden;
+    position: relative;
+}
+
+.gallery{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 
+    minmax(300px, 1fr));
+    grid-gap: 1.5rem;
+    grid-auto-rows: minmax(150px, auto);
+}
+
+.navbar ul{ 
+	margin:0; 
+	padding:0; 
+	list-style-type:none; 
+    align-content: center;
+    
+}
+.navbar li {
+    display:inline; 
+	line-height:2em; 
+	background: #6b6a6a;
+	margin:0.5em 0; 
+    padding:0.3em; 
+    font-size: 2.5rem;
+
+} 
+.navbar a{ 
+    text-decoration:none; 
+    color: black; 
+    
+}
+.active {
+    font-weight: bolder;
+}
+
+.hero {
+display: flex;
+justify-content: center;
+align-items: center;
+background: rgb(180, 97, 97);
+background: rgba(0, 0, 0, 0.25);
+color: white;
+margin-bottom: 100px;
+position: relative;
+overflow: hidden;
+min-height: 100vh;
+}
+.video-bg {
+    position: absolute;
+    z-index: -2;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    min-width: 100%;
+    min-height: 100%;
+    
+}
+.image_bg {
+    position: absolute;
+    z-index: -2;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    min-width: 100%;
+    min-height: 100%;
+}
+/*.heroimage {
+    position: absolute;
+    z-index: -1;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    min-width: 100%;
+    min-height: 100%;*/
+}
+.social-buttons {
+  position: relative;
+  max-width: 680px;
+  margin: 0 auto;
+  padding: 50px 30px;
+  text-align: center;
+  scrollbar-shadow-color: blue;
+  background-color: #F0F2F5;
+}
+  .purpose {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(300px, 1fr));
+ }
+.cv {
+  margin:20px 0px 5px 0px;
+  padding-left:40px;
+  padding-right:40px;  /*source: https://codepen.io/johnsonjpj/pen/MwQqLN */
+  /* text-align: left; */
+    display: grid;
+    grid-template-columns: repeat(4, 1/2fr);
+    grid-template-rows: repeat(6, 1/2fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+ }
+   
+.heading {
+    font-size:28px;
+    padding-bottom:10px;
+    border-bottom:2px solid #080808;
+    margin-top:30px;
+  }/*source: https://codepen.io/johnsonjpj/pen/MwQqLN */
+  
+  .title {
+    color:#080808;
+    margin:0px;
+    margin-top:30px;
+    font-size:22px;
+    padding-bottom:5px;
+    font-weight:bold;
+  }/*source: https://codepen.io/johnsonjpj/pen/MwQqLN */
+  
+  .subtitle {
+    padding-bottom:5px;
+    margin:0px;
+    color:#636366;
+    font-size:19px;
+  }/*source: https://codepen.io/johnsonjpj/pen/MwQqLN */
+  
+  .date {
+    padding-bottom:5px;
+    margin:0px;
+    color:#9E9598;
+    font-style:italic;
+    font-size:17px;
+  }/*source: https://codepen.io/johnsonjpj/pen/MwQqLN */
+  .skills {
+      text-align: right;
+      margin:20px 0px 5px 0px;
+      padding-left:40px;
+      padding-right:40px;  /*source: https://codepen.io/johnsonjpj/pen/MwQqLN */
+      /* text-align: left; */
+        display: grid;
+        grid-template-columns: repeat(4, 1/2fr);
+        grid-template-rows: repeat(6, 1/2fr);
+        grid-column-gap: 0px;
+        grid-row-gap: 0px;
+  }
+  .Portfolio {
+      text-align: left;
+  }
+  
+/*portfolio gallary */
