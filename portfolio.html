@@ -9,7 +9,7 @@
     <body>
         <nav>
          <div class="navbar"style="text-align: center;"> 
-            <ul>
+            <ul id="nav">
                 <li><a href="index.html">Home</a></li>
                 <li class="active">
                   <a href="portfolio.html">Portfolio</a></li>
@@ -17,6 +17,7 @@
                 <li><a href="cv.html">CV</a></li>
             </ul>
         </nav>
+        
         <div class="hero">
             <h1> Portfolio </h1>
                 <img class="image_bg" src="images/lake.jpg" type="image/jpg"> <!--Source: https://www.pexels.com/photo/bird-s-eye-view-of-lake-during-daytime-3225165/ -->
@@ -53,15 +54,18 @@
                 <br>
             <!--apps-->
             <!--Random-Quote-Generator -->
+            <h2>Random Quote Generator</h2>
             <a href= "https://hannahalemayehu.github.io/Random-Quote-Generator/" alt="random quote Generator app"> 
                <img src="images/quote.png" alt="https://hannahalemayehu.github.io/Random-Quote-Generator/"> 
                <!--image source: https://www.kindpng.com/imgv/iTxmooi_transparent-quote-icon-png-quote-vector-black-png/ -->
-
+            <h2>Weather</h2>
             <!--weather-->
             <a href= "https://hannahalemayehu.github.io/Weather-App/" alt="weather app"> 
                 <img src="images/weather.png" alt="https://hannahalemayehu.github.io/Weather-App/"> 
                 <!--image source: https://www.pinterest.com/pin/692921092647043844/ -->
-            <!--to-to-list-->
+            
+            <h2>To Do List</h2>
+                <!--to-to-list-->
             <a href= "https://hannahalemayehu.github.io/To-Do-List/." alt="to do list app"> 
                 <img src="images/to_do.png" alt="https://hannahalemayehu.github.io/To-Do-List/."> 
                 <!--image source: https://www.flaticon.com/free-icon/to-do-list_1560 -->
@@ -86,17 +90,21 @@
             <img src="images/linkedin.png" alt="https://www.linkedin.com/in/hannah-a-ba4521121/"
             style="width:42px;height:42px;border:0;">
         </div>
-       
+        <div align="center" id="footer" > 
+            <h4>Today's date is: 
+                <script>
+                    var todaydate = new Date();
+                    var day =todaydate.getDate();
+                    var month = todaydate.getMonth()+1;
+                    var year = todaydate.getFullYear();
+                    document.write(day + "/" + month + "/" + year) 
+                </script>
+            </h4>
+        </div>
+
+      <script src="mouse.js"> </script>
+      
     </body>
-    <div align="center" id="footer" > 
-        <h4>Today's date is: 
-            <script>
-                var todaydate = new Date();
-                var day =todaydate.getDate();
-                var month = todaydate.getMonth()+1;
-                var year = todaydate.getFullYear();
-                document.write(day + "/" + month + "/" + year) 
-            </script>
-        </h4>
-    </div>
-</html> 
+
+
+ </html> 
