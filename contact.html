@@ -36,17 +36,14 @@
         <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSctA3J9mZQGPGcEKQfxjaEf-iuixRsXa7sB4heLcyIKAnN5uQ/viewform?embedded=true"
          width="640" height="947" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
     </div>   
-       
-    </body>
-    <div align="center" id="footer" > 
+      <div class="footer" > 
       <h4>Today's date is: 
-        <script>
-          var todaydate = new Date();
-          var day =todaydate.getDate();
-          var month = todaydate.getMonth()+1;
-          var year = todaydate.getFullYear();
-          document.write(day + "/" + month + "/" + year) 
-        </script>
+        <div class="date"></div>
       </h4>
-    </div>
+      </div>
+
+    <script src="clock.js"></script> 
+    <script src="date.js"></script>
+    </body>
+    
 </html> 
