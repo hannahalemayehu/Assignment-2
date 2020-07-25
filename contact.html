@@ -11,17 +11,20 @@
         <div class="margin ">
         </div>
         <nav>
-            <div class="navbar"style="text-align: center;"> 
+            <div class="navbar" style="text-align: center;"> 
         <ul>
           <li><a href="index.html">Home</a></li>
             <li><a href="portfolio.html">Portfolio</a></li>
              <li class="active"><a href="contact.html">Contact</a></li>
           <li><a href="cv.html">CV</a></li>
         </ul>
-      </nav>
+      </nav> 
+    </div>
+            
       <div class="hero">
         <h1>Contact</h1> 
-        <img class="image_bg" src="images/beach.jpg" type="image/jpg"> <!--Source: https://www.pexels.com/photo/bird-s-eye-view-of-seashore-during-daytime-3161415/-->
+        <img class="image_bg" src="images/beach.jpg" alt="beach
+        "> <!--Source: https://www.pexels.com/photo/bird-s-eye-view-of-seashore-during-daytime-3161415/-->
       </div>
     
       <h3> You can contact me via :</h3>
@@ -34,16 +37,23 @@
           https://www.youtube.com/watch?v=LoOb3jSnEw0-->
         <p> You can send me a message me a message by filling out the form below:</p>
         <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSctA3J9mZQGPGcEKQfxjaEf-iuixRsXa7sB4heLcyIKAnN5uQ/viewform?embedded=true"
-         width="640" height="947" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
-    </div>   
-      <div class="footer" > 
-      <h4>Today's date is: 
-        <div class="date"></div>
-      </h4>
-      </div>
+         width="640" height="947" frameborder="0" marginheight="0" marginwidth="0"></iframe>
+     
+   
 
+      <div align="center" class="footer" > 
+        <h4>Today's date is: </h4>
+          <script>
+            var todaydate = new Date();
+            var day =todaydate.getDate();
+            var month = todaydate.getMonth()+1;
+            var year = todaydate.getFullYear();
+            document.write(day + "/" + month + "/" + year) 
+          </script>
+        </div>
+          
     <script src="clock.js"></script> 
-    <script src="date.js"></script>
+  <!-- <script src="date.js"></script>-->
     </body>
     
 </html> 
